@@ -11,8 +11,8 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://kuvakchatclient.onrender.com/","http://localhost:3000/"]
-    methods: ["GET", "POST"],
+    origin: ["https://kuvakchatclient.onrender.com/","http://localhost:3000/"],
+    methods: ["GET", "POST"]
   },
 });
 io.on('connection', (socket) => {
